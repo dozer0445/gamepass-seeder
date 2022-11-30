@@ -44,7 +44,7 @@ public:
 
     void ParseCommandLine(int argc, char **argv)
     {
-        static const char *help = "Gamepass-seeder\n"
+        static const char *help = "gamepass-seeder\n"
                                   "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                                   "\n"
                                   "Options:\n"
@@ -468,9 +468,9 @@ extern "C" void *ThreadStats(void *)
     return nullptr;
 }
 
-static const string mainnet_seeds[] = {"127.0.0.1",
+static const string mainnet_seeds[] = {"seeder.gpseed.me",
                                        ""};
-static const string testnet_seeds[] = {"127.0.0.1",
+static const string testnet_seeds[] = {"tseeder.gpseed.me",
                                        ""};
 static const string regtest_seeds[] = {"localhost",
                                        ""};
@@ -541,8 +541,8 @@ int main(int argc, char **argv) {
     }
     if (opts.fUseTestNet) {
         printf("Using testnet.\n");
-        pchMessageStart[0] = 0x52;
-        pchMessageStart[1] = 0x56;
+        pchMessageStart[0] = 0x47;
+        pchMessageStart[1] = 0x50;
         pchMessageStart[2] = 0x4e;
         pchMessageStart[3] = 0x54;
         seeds = testnet_seeds;

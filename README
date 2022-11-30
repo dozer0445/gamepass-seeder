@@ -1,7 +1,7 @@
 gamepass-seeder
 ==============
 
-Gamepass-seeder is a crawler for the Gamepass network, which exposes a list
+gamepass-seeder is a crawler for the gamepass network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:

@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2011 The Bitcoin developers
 // Copyright (C) 2020 The Raven Core developers
+// Copyright (c) 2022 The Gamepass Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,7 +26,7 @@ static const char *ppszTypeName[] =
                 "block",
         };
 
-unsigned char pchMessageStart[4] = {0x47, 0x50, 0x4e, 0x43};  // HEX 4 G P N C
+unsigned char pchMessageStart[4] = {0x47, 0x50, 0x4e, 0x43};  // HEX 4 G P N
 
 CMessageHeader::CMessageHeader()
 {
